@@ -1,0 +1,15 @@
+            System.out.println("Vas a calcular tu edad en años de perro.");
+
+            System.out.print("Escribe tu edad: ");
+            int edad = in.nextInt();
+
+            sum = edad * 7;
+            System.out.println("Si fueras un perro, tendrias: " + sum + " años");
+
+
+
+
+
+
+
+            años * 365 + dias vividos
