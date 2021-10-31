@@ -1,15 +1,18 @@
+/*importa clases para el funcionamiento del programa*/
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
+/*Inicio*/
 public class Aplicacion {
     public static void main(String[]args) {
 
+/*Definir variables, etc.*/ 
         Scanner in = new Scanner(System.in);
         DecimalFormat format = new DecimalFormat("###,###.##");
         int opc,dia,mes;
-
         boolean salir = false;
 
+/*Comienzo del programa (se visualiza la interfaz con ASCII)*/
         do{
         System.out.println(   "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._");
         System.out.println( ",'_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._`.");
@@ -34,7 +37,7 @@ public class Aplicacion {
         System.out.print("Ingrese una opcion ");
         opc = in.nextInt();
 
-
+/*Eleccion de opciones*/
         switch(opc){
             case 1:
                 System.out.println("Has seleccionado la opcion 1");
@@ -113,6 +116,8 @@ public class Aplicacion {
 
                 case 6:
                 salir=true;
+                default:
+                System.out.println("opcion incorrecta");
 
         }           
         break;
