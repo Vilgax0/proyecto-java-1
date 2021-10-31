@@ -38,10 +38,24 @@ public class Aplicacion {
         switch(opc){
             case 1:
                 System.out.println("Has seleccionado la opcion 1");
-                System.out.print("Ingresa el dia de tu nacimiento: ");
-                dia = in.nextInt();
-                System.out.print("Ingresa el mes de tu nacimiento: ");
-                mes = in.nextInt();
+                do {
+                    System.out.println("");
+                    System.out.print("Ingresa el dia de tu nacimiento: ");
+                    dia = in.nextInt();
+                    if(dia > 31 || dia < 1){
+                        System.out.println("Debes elegir un dia entre 1 y 31");
+                    }
+                } while(dia >31 || dia < 1);
+                System.out.println("");
+
+                do{
+                    System.out.print("Ingresa el mes de tu nacimiento: ");
+                    mes = in.nextInt();
+                    if(mes > 12 || mes < 1){
+                    System.out.println("Debes elegir un mes entre 1 y 12");
+                }
+                }while(mes > 12 || mes < 1);
+                System.out.println("");
 
                 if(dia >= 21 && mes == 3 ||dia <= 20 && mes == 4){
                     System.out.println("Signo: Aries");
