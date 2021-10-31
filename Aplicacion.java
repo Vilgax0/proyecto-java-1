@@ -1,10 +1,14 @@
-
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Aplicacion {
     public static void main(String[]args) {
 
         Scanner in = new Scanner(System.in);
+        DecimalFormat format = new DecimalFormat("###,###.##");
+        int opc,dia,mes;
+
+        boolean salir = false;
 
         do{
         System.out.println(   "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._");
@@ -28,43 +32,78 @@ public class Aplicacion {
         System.out.println("");
         
         System.out.print("Ingrese una opcion ");
-        int opc = in.nextInt();
+        opc = in.nextInt();
 
 
-        if(opc == 1)
-        {
-            //
-        }
+        switch(opc){
+            case 1:
+                System.out.println("Has seleccionado la opcion 1");
+                System.out.print("Ingresa el dia de tu nacimiento: ");
+                dia = in.nextInt();
+                System.out.print("Ingresa el mes de tu nacimiento: ");
+                mes = in.nextInt();
 
-        if(opc == 2)
-        {
-            //
-        }
+                if(dia >= 21 && mes == 3 ||dia <= 20 && mes == 4){
+                    System.out.println("Signo: Aries");
+                }
+                if(dia >= 24 && mes == 9 || dia <= 23 && mes == 10 ){
+                    System.out.println("Signo: Libra");
+                }
+                if(dia >= 21 && mes == 4 || dia <= 21 && mes == 5){
+                    System.out.println("Signo: Tauro");
+                }
+                if(dia >= 24 && mes == 10 || dia <= 22 && mes == 11){
+                    System.out.println("Signo: Escorpio");
+                }
+                if(dia >= 22 && mes == 5 || dia <= 21 && mes == 6){
+                    System.out.println("Signo: Geminis");
+                }
+                if(dia >= 23 && mes == 11 || dia <= 21 && mes == 12){
+                    System.out.println("Signo: Sagitario");
+                }
+                if(dia >= 21 && mes == 6 || dia <= 23 && mes == 7){
+                    System.out.println("Signo: Cancer");
+                }
+                if(dia >= 22 && mes == 12 || dia <= 20 && mes == 1){
+                    System.out.println("Signo: Capricornio");
+                }
+                if(dia >= 24 && mes == 7 || dia <= 23 && mes == 8){
+                    System.out.println("Signo: Leo");
+                }
+                if(dia >= 21 && mes == 1 || dia <= 19 && mes == 2){
+                    System.out.println("Signo: Acuario");
+                }
+                if(dia >= 24 && mes == 8 || dia <= 23 && mes == 9){
+                    System.out.println("Signo: Virgo");
+                }
+                if(dia >= 20 && mes == 2 || dia <= 20 && mes == 3){
+                    System.out.println("Signo: Piscis");
+                }
+                break;
 
-        if(opc == 3)
-        {
-            //
-        }
+                case 2:
+                System.out.println("Has seleccionado la opcion 2");
+                break;
 
-        if(opc == 4)
-        {
-            //
-        }
+                case 3:
+                System.out.println("Has seleccionado la opcion 2");
+                break;
 
-        if(opc == 5)
-        {
-            System.out.println("Hasta pronto");
-        }
+                case 4:
+                System.out.println("Has seleccionado la opcion 2");
+                break;
 
-        if(opc == 6)
-        {
-            System.out.println("Hasta pronto");
-        }
+                case 5:
+                System.out.println("Has seleccionado la opcion 2");
+                break;
 
-    }while(opc != 6);
+                case 6:
+                salir=true;
 
+        }           
+        break;
+        }while(!salir);
+        System.out.println("Has salido del programa");
 
-        
-        
     } 
 }
