@@ -31,10 +31,10 @@ public class Aplicacion {
         System.out.println(" ) )        2. Calcular Tus dias vividos.                  ( (");
         System.out.println("( (         3. Calcular tu edad en años de perro.           ) )");
         System.out.println(" ) )        4. Caluclar tu número según la numerología.    ( (");
-        System.out.println("( (         5. Calcular todos los anteriores.               ) )");
-        System.out.println(" ) )        6. Salir                                       ( (");
+        System.out.println("( (         5. Salir.                                       ) )");
+        System.out.println(" ) )                                                       ( (");
         System.out.println("( (                                                         ) )");
-        System.out.println(" ) )           Realizada por Camilo y Mkclaren.             ( (");
+        System.out.println(" ) )           Realizada por Camilo y Mkclaren.            ( (");
         System.out.println("( (_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._) )");
         System.out.println(" `._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._,'");
         System.out.println("");
@@ -147,7 +147,7 @@ public class Aplicacion {
                 case 5:
                 salir=true;
                 default:
-                System.out.println("opcion incorrecta");
+                System.out.println("Saliendo del programa");
 
         }           
         break;
