@@ -15,7 +15,6 @@ public class Aplicacion {
         boolean salir = false;
 
 /*Comienzo del programa (se visualiza la interfaz con ASCII)*/
-    try {
         do{
         System.out.println(   "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._");
         System.out.println( ",'_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._`.");
@@ -131,18 +130,13 @@ public class Aplicacion {
                     
                 break;
 
-                case 6:
-                salir=true;
-                default:
-                System.out.println("opcion incorrecta");
+                
 
         }           
         break;
         }while(!salir);
         System.out.println("Has salido del programa");
 
-    } catch (Exception e) {
-        System.out.println("Ha ocurrido un error" );
 
     }
 
