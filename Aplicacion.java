@@ -9,10 +9,13 @@ public class Aplicacion {
 /*Definir variables, etc.*/ 
         Scanner in = new Scanner(System.in);
         DecimalFormat format = new DecimalFormat("###,###.##");
-        int opc,dia,mes;
+        int opc,dia,mes,num;
+        int num1,numr = 0;
+       
         boolean salir = false;
 
 /*Comienzo del programa (se visualiza la interfaz con ASCII)*/
+    try {
         do{
         System.out.println(   "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._");
         System.out.println( ",'_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._`.");
@@ -34,7 +37,7 @@ public class Aplicacion {
         System.out.println(" `._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._,'");
         System.out.println("");
         
-        System.out.print("Ingrese una opcion ");
+        System.out.print("Ingrese una opcion: ");
         opc = in.nextInt();
 
 /*Eleccion de opciones*/
@@ -56,7 +59,7 @@ public class Aplicacion {
                     mes = in.nextInt();
                     if(mes > 12 || mes < 1){
                     System.out.println("Debes elegir un mes entre 1 y 12");
-                }
+                    }
                 }while(mes > 12 || mes < 1);
                 System.out.println("");
 
@@ -99,19 +102,33 @@ public class Aplicacion {
                 break;
 
                 case 2:
-                System.out.println("Has seleccionado la opcion 2");
+                    System.out.println("Has seleccionado la opcion 2");
                 break;
 
                 case 3:
-                System.out.println("Has seleccionado la opcion 2");
+                    System.out.println("Has seleccionado la opcion 2");
                 break;
 
                 case 4:
-                System.out.println("Has seleccionado la opcion 2");
+                    System.out.println("Has seleccionado la opcion 2");
                 break;
 
                 case 5:
-                System.out.println("Has seleccionado la opcion 2");
+                    System.out.println("Has seleccionado la opcion 2");
+                    do{
+                        System.out.print("Ingresa tu dia de nacimiento: ");
+                        num = in.nextInt();
+                        if(num <= 0 || num >= 32){
+                        System.out.println("Debes elegir un numero entre 1 y 31");
+                        }
+                    }while(num > 31 || num <= 0);
+                    System.out.println("");
+
+                        num1 = (num%10) + (num/10);
+                        numr = (num1%10) + (num1/10);
+                    
+                    System.out.println("tu número según la numerología es el: " + numr + "");
+                    
                 break;
 
                 case 6:
@@ -124,5 +141,20 @@ public class Aplicacion {
         }while(!salir);
         System.out.println("Has salido del programa");
 
+    } catch (Exception e) {
+        System.out.println("Ha ocurrido un error" );
+
+    }
+
     } 
 }
+
+
+
+
+
+
+
+
+
+
