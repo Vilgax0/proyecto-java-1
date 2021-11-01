@@ -115,13 +115,9 @@ public class Aplicacion {
 
                 case 5:
                     System.out.println("Has seleccionado la opcion 2");
-                    do{
                         System.out.print("Ingresa tu dia de nacimiento: ");
                         num = in.nextInt();
-                        if(num <= 0 || num >= 32){
-                        System.out.println("Debes elegir un numero entre 1 y 31");
-                        }
-                    }while(num > 31 || num <= 0);
+                        
                     System.out.println("");
 
                         num1 = (num%10) + (num/10);
