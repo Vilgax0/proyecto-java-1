@@ -10,13 +10,10 @@ public class Aplicacion {
         Scanner in = new Scanner(System.in);
         DecimalFormat format = new DecimalFormat("###,###.##");
         int opc,dia,mes,num;
+        int meses,edad,dias,horas,perro;
         int num1,numr = 0;
+        double perroN;
         boolean salir = false;
-        int meses;
-        int edad;
-        int dias;
-        int horas;
-        int perro;
         
 
 /*Comienzo del programa (se visualiza la interfaz con ASCII)*/
@@ -120,14 +117,16 @@ public class Aplicacion {
                 break;
 
                 case 3:
-                    System.out.println("Has seleccionado la opcion 2");
+                    System.out.println("Has seleccionado la opcion 3");
+                System.out.print("Ingresa tu edad: ");
+                edad = in.nextInt();
+                perro = edad * 7;
+                perroN = (Math.log (edad) * 16) + 31;
+                System.out.println("Tienes " + perro + " años de perro");
+                System.out.println("Tienes " + (format.format(perroN)) + "años de perro con la nueva formula");
                 break;
 
                 case 4:
-                    System.out.println("Has seleccionado la opcion 2");
-                break;
-
-                case 5:
                     System.out.println("Has seleccionado la opcion 2");
                     do{
                         System.out.print("Ingresa tu dia de nacimiento: ");
@@ -145,7 +144,7 @@ public class Aplicacion {
                     
                 break;
 
-                case 6:
+                case 5:
                 salir=true;
                 default:
                 System.out.println("opcion incorrecta");
