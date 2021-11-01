@@ -11,8 +11,13 @@ public class Aplicacion {
         DecimalFormat format = new DecimalFormat("###,###.##");
         int opc,dia,mes,num;
         int num1,numr = 0;
-       
         boolean salir = false;
+        int meses;
+        int edad;
+        int dias;
+        int horas;
+        int perro;
+        
 
 /*Comienzo del programa (se visualiza la interfaz con ASCII)*/
     try {
@@ -32,7 +37,7 @@ public class Aplicacion {
         System.out.println("( (         5. Calcular todos los anteriores.               ) )");
         System.out.println(" ) )        6. Salir                                       ( (");
         System.out.println("( (                                                         ) )");
-        System.out.println(" ) )           Realizada por Mkclaren y Camilo.           ( (");
+        System.out.println(" ) )           Realizada por Camilo y Mkclaren.             ( (");
         System.out.println("( (_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._) )");
         System.out.println(" `._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._,'");
         System.out.println("");
@@ -102,7 +107,16 @@ public class Aplicacion {
                 break;
 
                 case 2:
-                    System.out.println("Has seleccionado la opcion 2");
+                System.out.println("Has seleccionado la opcion 2");
+                System.out.print("Ingresa tu edad: ");
+                edad = in.nextInt();
+                meses = edad * 12;
+                dias = edad * 365;
+                horas = dias * 24;
+
+                System.out.println("Has vivido aproximadamente " + (format.format(meses)) + " meses");
+                System.out.println("Has vivido aproximadamente " + (format.format(dias)) + " dias");
+                System.out.println("Has vivido aproximadamente " + (format.format(horas)) + " horas");
                 break;
 
                 case 3:
