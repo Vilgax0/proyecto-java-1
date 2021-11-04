@@ -31,8 +31,8 @@ public class Aplicacion {
         System.out.println(" ) )        2. Calcular Tus dias vividos.                  ( (");
         System.out.println("( (         3. Calcular tu edad en años de perro.           ) )");
         System.out.println(" ) )        4. Caluclar tu número según la numerología.    ( (");
-        System.out.println("( (         5. Salir.                                       ) )");
-        System.out.println(" ) )                                                       ( (");
+        System.out.println("( (         5. Creditos.                                   ) )");
+        System.out.println(" ) )        6. Salir.                                      ( (");
         System.out.println("( (                                                         ) )");
         System.out.println(" ) )           Realizada por Camilo y Mkclaren.            ( (");
         System.out.println("( (_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._) )");
@@ -145,12 +145,22 @@ public class Aplicacion {
                 break;
 
                 case 5:
+                System.out.println("Haz seleccionado la opnción 5");
+                
+                System.out.println("Creditos");
+                System.out.println("Realizado por:");
+                System.out.println("Camilo Andres Guzman Padilla");
+                System.out.println("Mkclaren tobar velez");
+                break;
+
+                case 6:
                 salir=true;
                 default:
                 System.out.println("Saliendo del programa");
 
         }           
         break;
+                
         }while(!salir);
         System.out.println("Has salido del Programa");
 
